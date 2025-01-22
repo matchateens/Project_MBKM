@@ -4,6 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.ticker as ticker
+import plotly.express as px
 
 # Fungsi untuk memuat data
 @st.cache_data
