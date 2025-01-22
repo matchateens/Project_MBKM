@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    csv_path = '/mount/src/project_mbkm/data_pisang.csv'  # Sesuaikan path file CSV Anda
+    data = pd.read_csv("https://raw.githubusercontent.com/username/repo/branch/data/data_pisang.csv")
     data = pd.read_csv(csv_path)
     return data
 
