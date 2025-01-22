@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    data = pd.read_csv("https://raw.githubusercontent.com/matchateens/repo/branch/data/data_padi.csv")
+    df = load_data("data/data_padi.csv")
     data = pd.read_csv(csv_path)
     return data
 
