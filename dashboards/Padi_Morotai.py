@@ -1,16 +1,15 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import MinMaxScaler
+import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder
+import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    df = load_data("data/data_padi.csv")
-    data = pd.read_csv(csv_path)
-    return data
+    df = pd.read_csv("data/data_padi.csv")
+    return df
 
 # Fungsi untuk analisis strategi per wilayah
 def analyze_regional_strategy(df):
