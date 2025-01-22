@@ -3,6 +3,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
+import plotly.express as px
+import graphviz
+import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
 @st.cache_data
