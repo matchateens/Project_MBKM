@@ -1,0 +1,103 @@
+/* Import Poppins dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Gunakan Poppins sebagai font utama */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5dc; /* Warna cream muda */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container utama untuk mengatur lebar dan margin */
+.stApp {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff; /* Warna putih untuk konten */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul aplikasi */
+.stTitle {
+    font-size: 2.5rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600; /* Poppins semi-bold */
+}
+
+/* Sidebar */
+.stSidebar {
+    background-color: #f8f8f8; /* Warna abu-abu muda */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu sidebar */
+.stSidebar .stSelectbox, .stSidebar .stRadio {
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header di dalam konten */
+.stHeader {
+    font-size: 2rem;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: 500; /* Poppins medium */
+}
+
+/* Subheader di dalam konten */
+.stSubheader {
+    font-size: 1.5rem;
+    color: #555555;
+    margin-bottom: 10px;
+    font-weight: 400; /* Poppins regular */
+}
+
+/* Grafik dan visualisasi */
+.stPlotlyChart, .stPyplot {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Kesimpulan dan catatan */
+.stMarkdown {
+    padding: 15px;
+    background-color: #f8f8f8; /* Warna abu-abu muda */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tombol dan interaksi */
+.stButton button {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.stButton button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+}
+
+/* Footer */
+.stFooter {
+    text-align: center;
+    padding: 10px;
+    background-color: #f8f8f8; /* Warna abu-abu muda */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+}
