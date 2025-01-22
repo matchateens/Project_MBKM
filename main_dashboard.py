@@ -5,13 +5,12 @@ import pandas as pd
 from dashboards.Ayam_Petelur_Morotai import main as ayam_dashboard
 from dashboards.Cengkeh_Morotai import main as cengkeh_dashboard
 from dashboards.Kakao_Morotai import main as kakao_dashboard
-from dashboards.Pisang_Morotai import main as pisang_dashboard
 from dashboards.Padi_Morotai import main as padi_dashboard
+from dashboards.Pisang_Morotai import main as pisang_dashboard
 
-# Load Our Dataset
-def load_data(data):
-    df = pd.read_csv(data)
-    return df
+# Memuat file CSS
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Judul aplikasi
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
