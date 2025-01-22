@@ -11,7 +11,7 @@ import matplotlib.ticker as ticker
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    csv_path = 'D:/Anggi/data/data_ayam.csv'
+    csv_path = '/mount/src/project_mbkm/data_ayam.csv'
     data = pd.read_csv(csv_path)
     return data
 
