@@ -3,6 +3,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
+import plotly.express as px
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.linear_model import LinearRegression
 import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
