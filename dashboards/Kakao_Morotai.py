@@ -3,16 +3,13 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-import plotly.express as px
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.linear_model import LinearRegression
-import matplotlib.ticker as ticker  # Import ticker untuk FixedLocator
+import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    df = load_data("data/data_kakao.csv")
-    return data
+    df = pd.read_csv("data/data_kakao.csv")
+    return df
 
 # Fungsi-fungsi analisis
 def analyze_yearly_production(df):
@@ -101,7 +98,8 @@ def main():
         ax.set_ylabel("Produksi (kg)")
         ax.grid(True)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik menunjukkan fluktuasi produksi kakao dari tahun ke tahun. Puncak produksi terjadi pada tahun tertentu (misalnya, 2022), sementara produksi terendah terjadi pada tahun lainnya (misalnya, 2023).
@@ -112,14 +110,14 @@ def main():
         st.subheader("Wilayah dengan Produksi Tertinggi")
         top_regions = analyze_top_regions(data).head()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=top_regions.index, y=top_regions['sum'], hue=top_regions.index, palette='viridis', legend=False, ax=ax)
+        sns.barplot(x=top_regions.index, y=top_regions['sum'], palette='viridis', ax=ax)
         ax.set_title("Produksi Kakao per Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Total Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(top_regions.index))))  # Atur posisi tick
-        ax.set_xticklabels(top_regions.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik batang menunjukkan wilayah dengan produksi tertinggi. Misalnya, Halmahera Utara memiliki produksi tertinggi, diikuti oleh wilayah lainnya.
@@ -130,12 +128,13 @@ def main():
         st.subheader("Pengaruh Curah Hujan terhadap Produksi")
         rain_production = analyze_rain_production(data)
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=rain_production.index, y=rain_production['mean'], hue=rain_production.index, palette='coolwarm', legend=False, ax=ax)
+        sns.barplot(x=rain_production.index, y=rain_production['mean'], palette='coolwarm', ax=ax)
         ax.set_title("Pengaruh Curah Hujan terhadap Produksi Kakao")
         ax.set_xlabel("Curah Hujan")
         ax.set_ylabel("Rata-Rata Produksi (kg)")
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik menunjukkan bahwa curah hujan sedang memberikan dampak positif pada produksi kakao, dengan rata-rata produksi tertinggi.
@@ -146,14 +145,14 @@ def main():
         st.subheader("Analisis Permintaan Pasar")
         market_demand = analyze_market_demand(data)
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=market_demand.index, y=market_demand['produksi_pertahun'], hue=market_demand.index, palette='cool', legend=False, ax=ax)
+        sns.barplot(x=market_demand.index, y=market_demand['produksi_pertahun'], palette='cool', ax=ax)
         ax.set_title("Distribusi Permintaan Pasar")
         ax.set_xlabel("Kategori Permintaan")
         ax.set_ylabel("Rata-Rata Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(market_demand.index))))  # Atur posisi tick
-        ax.set_xticklabels(market_demand.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik menunjukkan bahwa permintaan pasar tidak selalu selaras dengan produksi kakao. Permintaan pasar rendah memiliki produksi rata-rata lebih tinggi dibanding permintaan pasar tinggi.
@@ -164,14 +163,14 @@ def main():
         st.subheader("Harga per Wilayah")
         price_analysis = analyze_price_per_region(data)
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=price_analysis.index, y=price_analysis['harga']['mean'], hue=price_analysis.index, palette='magma', legend=False, ax=ax)
+        sns.barplot(x=price_analysis.index, y=price_analysis['harga']['mean'], palette='magma', ax=ax)
         ax.set_title("Harga Rata-Rata Kakao per Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Harga (Rp/kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(price_analysis.index))))  # Atur posisi tick
-        ax.set_xticklabels(price_analysis.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik menunjukkan harga rata-rata kakao per wilayah. Misalnya, Halmahera Timur memiliki harga rata-rata tertinggi, sementara Halmahera Utara memiliki harga rata-rata terendah.
@@ -185,7 +184,8 @@ def main():
         sns.heatmap(correlation, annot=True, cmap='coolwarm', ax=ax)
         ax.set_title("Korelasi antara Produksi, Curah Hujan, Harga, dan Permintaan Pasar")
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Heatmap korelasi menunjukkan hubungan antara variabel produksi, harga, luas lahan, dan permintaan pasar.
@@ -196,14 +196,14 @@ def main():
         st.subheader("Wilayah Paling Potensial")
         potential_regions = analyze_potential_regions(data).sort_values('skor_potensi', ascending=False).head()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=potential_regions.index, y=potential_regions['skor_potensi'], hue=potential_regions.index, palette='plasma', legend=False, ax=ax)
+        sns.barplot(x=potential_regions.index, y=potential_regions['skor_potensi'], palette='plasma', ax=ax)
         ax.set_title("Wilayah dengan Potensi Produksi Tertinggi")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Skor Potensi")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(potential_regions.index))))  # Atur posisi tick
-        ax.set_xticklabels(potential_regions.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik batang menunjukkan wilayah dengan skor potensi tertinggi. Misalnya, Halmahera Tengah dan Halmahera Utara dinilai paling potensial untuk pengembangan kakao.
@@ -224,7 +224,8 @@ def main():
         ax.set_ylabel("Produksi (kg)")
         ax.grid(True)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik garis menunjukkan pola produksi berdasarkan curah hujan. Produksi tertinggi terjadi pada kondisi curah hujan sedang, sementara produksi terendah terjadi pada curah hujan tinggi.
@@ -241,7 +242,8 @@ def main():
         ax.set_ylabel("Total Produksi (kg)")
         ax.grid(True)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik garis menunjukkan proyeksi produksi kakao. Produksi diproyeksikan menurun hingga tahun tertentu, menunjukkan perlunya upaya untuk meningkatkan produktivitas.
@@ -251,14 +253,14 @@ def main():
         st.subheader("Analisis Kompetisi (Market Share)")
         market_share = data.groupby('wilayah')['produksi_pertahun'].sum().reset_index()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=market_share['wilayah'], y=market_share['produksi_pertahun'], hue=market_share['wilayah'], palette='viridis', legend=False, ax=ax)
+        sns.barplot(x=market_share['wilayah'], y=market_share['produksi_pertahun'], palette='viridis', ax=ax)
         ax.set_title("Analisis Kompetisi (Market Share)")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Total Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(market_share['wilayah']))))  # Atur posisi tick
-        ax.set_xticklabels(market_share['wilayah'], rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik batang menunjukkan pangsa pasar per wilayah. Misalnya, Halmahera Utara memiliki pangsa pasar terbesar, diikuti oleh wilayah lainnya.
@@ -273,7 +275,8 @@ def main():
         ax.set_xlabel("Produksi (kg)")
         ax.set_ylabel("Harga (Rp/kg)")
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Scatter plot menunjukkan hubungan antara produksi dan harga. Korelasi antara produksi per tahun dan harga menunjukkan pengaruh yang sangat lemah.
@@ -288,14 +291,14 @@ def main():
         st.subheader("Analisis Skor Wilayah")
         potential_regions = analyze_potential_regions(data).sort_values('skor_potensi', ascending=False).head()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=potential_regions.index, y=potential_regions['skor_potensi'], hue=potential_regions.index, palette='plasma', legend=False, ax=ax)
+        sns.barplot(x=potential_regions.index, y=potential_regions['skor_potensi'], palette='plasma', ax=ax)
         ax.set_title("Analisis Skor Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Skor Potensi")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(potential_regions.index))))  # Atur posisi tick
-        ax.set_xticklabels(potential_regions.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik batang menunjukkan skor potensi per wilayah. Wilayah dengan skor tinggi memiliki potensi besar untuk pengembangan kakao.
@@ -306,14 +309,14 @@ def main():
         st.subheader("Analisis Risiko Produksi")
         risk_data = data.groupby('wilayah')['produksi_pertahun'].std().reset_index()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=risk_data['wilayah'], y=risk_data['produksi_pertahun'], hue=risk_data['wilayah'], palette='coolwarm', legend=False, ax=ax)
+        sns.barplot(x=risk_data['wilayah'], y=risk_data['produksi_pertahun'], palette='coolwarm', ax=ax)
         ax.set_title("Analisis Risiko Produksi")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Standar Deviasi Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(risk_data['wilayah']))))  # Atur posisi tick
-        ax.set_xticklabels(risk_data['wilayah'], rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Grafik batang menunjukkan standar deviasi produksi per wilayah. Wilayah dengan standar deviasi tinggi menunjukkan risiko produksi yang lebih besar.
@@ -338,7 +341,7 @@ def main():
         # Contoh analisis peluang pasar
         st.subheader("Peluang Pasar Berdasarkan Permintaan")
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(data=data, x='permintaan_pasar', y='produksi_pertahun', hue='permintaan_pasar', palette='cool', legend=False, ax=ax)
+        sns.barplot(data=data, x='permintaan_pasar', y='produksi_pertahun', palette='cool', ax=ax)
         ax.set_title("Peluang Pasar Berdasarkan Permintaan")
         ax.set_xlabel("Kategori Permintaan")
         ax.set_ylabel("Produksi (kg)")
