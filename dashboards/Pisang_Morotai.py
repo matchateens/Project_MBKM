@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import MinMaxScaler
 
 # Fungsi untuk memuat data
 @st.cache_data
@@ -11,21 +14,6 @@ def load_data():
 
 # Fungsi utama untuk menjalankan dashboard
 def main():
-    st.markdown("""
-    <style>
-    .stApp {
-        max-width: 1200px;
-        margin: auto;
-    }
-    .stMarkdown {
-        padding: 10px;
-        background-color: #f0f2f6;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
     # Memuat data
     data = load_data()
 
