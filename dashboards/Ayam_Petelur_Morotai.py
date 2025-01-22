@@ -9,14 +9,16 @@ import graphviz
 import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
-df = load_data("data/data_ayam.csv")
+def load_data(data_path):
+    df = pd.read_csv(data_path)
+    return df
 
 def main():
     # Memuat data
-    data = load_data()
-
+    df = load_data("data/data_ayam.csv")
+    
     # Filter data untuk wilayah Morotai
-    morotai_data = data[data['wilayah'] == 'Kabupaten Pulau Morotai'].copy()
+    morotai_data = df[df['wilayah'] == 'Kabupaten Pulau Morotai'].copy()
 
     # Tab untuk menampilkan analisis
     tabs = st.tabs([
@@ -42,7 +44,6 @@ def main():
         ax.set_ylabel("Produksi (kg) / Harga (Rp/kg)", fontsize=12)
         ax.grid(True)
         st.pyplot(fig)
-        plt.close(fig)
         
         # Distribusi Permintaan
         st.subheader("Distribusi Permintaan Ayam")
@@ -53,18 +54,16 @@ def main():
         ax.set_ylabel("Jumlah Kasus", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
-        plt.close(fig)
         
         # Posisi Kompetitif
         st.subheader("Posisi Kompetitif Antar Wilayah")
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(data=data, x='wilayah', y='produksi_pertahun', hue='wilayah', palette='viridis', legend=False, ax=ax)
+        sns.barplot(data=df, x='wilayah', y='produksi_pertahun', hue='wilayah', palette='viridis', legend=False, ax=ax)
         ax.set_title("Perbandingan Produksi Antar Wilayah", fontsize=16)
         ax.set_xlabel("Wilayah", fontsize=12)
         ax.set_ylabel("Produksi Pertahun (kg)", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
-        plt.close(fig)
         
         # Kesimpulan
         st.markdown("""
@@ -87,7 +86,6 @@ def main():
         ax.set_ylabel("Harga (Rp/kg)", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
-        plt.close(fig)
         
         st.markdown("""
         **Kesimpulan:**
@@ -109,7 +107,6 @@ def main():
         ax.set_ylabel("Profit (Rp)", fontsize=12)
         ax.grid(True)
         st.pyplot(fig)
-        plt.close(fig)
         
         st.markdown("""
         **Kesimpulan:**
@@ -142,7 +139,6 @@ def main():
         ax.set_ylabel("Produksi Pertahun (kg)", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
-        plt.close(fig)
         
         st.markdown("""
         **Kesimpulan:**
