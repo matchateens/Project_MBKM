@@ -8,9 +8,6 @@ from dashboards.Kakao_Morotai import main as kakao_dashboard
 from dashboards.Padi_Morotai import main as padi_dashboard
 from dashboards.Pisang_Morotai import main as pisang_dashboard
 
-# Memuat file CSS
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # Judul aplikasi
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
