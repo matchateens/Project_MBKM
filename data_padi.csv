@@ -1,0 +1,301 @@
+tahun,wilayah,produksi_pertahun,curah_hujan,tingkat_kesuburan_tanah,harga,permintaan_pasar,luas_lahan_hektar,tingkat_konsumsi_perkapita_perkg
+2022,Kabupaten Halmahera Tengah,1726,rendah,5,6703,sedang,34,132
+2023,Kabupaten Pulau Morotai,2137,tinggi,9,4953,sedang,92,299
+2019,Kabupaten Pulau Morotai,1232,sedang,7,13876,rendah,67,127
+2019,Kabupaten Halmahera Barat,2395,tinggi,3,9428,sedang,32,209
+2023,Kabupaten Pulau Taliabu,2236,sedang,10,6407,tinggi,22,168
+2023,Kabupaten Halmahera Timur,3010,rendah,7,6093,tinggi,97,194
+2021,Kabupaten Halmahera Selatan,2261,sedang,4,9480,sedang,94,240
+2023,Kabupaten Halmahera Selatan,2010,sedang,10,6208,sedang,22,173
+2022,Kabupaten Halmahera Timur,1551,tinggi,4,13114,rendah,73,181
+2019,Kabupaten Halmahera Selatan,2349,tinggi,2,4610,rendah,29,211
+2020,Kabupaten Pulau Taliabu,2996,sedang,10,4355,rendah,66,86
+2021,Kabupaten Kepulauan Sula,4105,tinggi,10,8287,rendah,2,243
+2021,Kabupaten Pulau Morotai,1962,rendah,5,14268,rendah,51,99
+2024,Kabupaten Pulau Taliabu,4734,rendah,7,7723,sedang,69,237
+2023,Kota Ternate,2277,sedang,5,14805,tinggi,30,108
+2021,Kabupaten Halmahera Selatan,3205,rendah,9,11361,rendah,6,66
+2020,Kota Ternate,801,rendah,8,12139,tinggi,96,200
+2022,Kabupaten Pulau Taliabu,918,sedang,7,6722,sedang,20,135
+2024,Kabupaten Halmahera Tengah,631,rendah,3,12706,tinggi,80,262
+2022,Kota Ternate,2268,tinggi,5,9317,sedang,34,279
+2023,Kabupaten Halmahera Barat,3825,rendah,1,13651,sedang,25,292
+2019,Kabupaten Pulau Morotai,776,tinggi,1,6342,rendah,48,130
+2021,Kabupaten Halmahera Tengah,4976,rendah,9,7725,rendah,46,158
+2024,Kabupaten Kepulauan Sula,3126,sedang,3,10118,tinggi,98,93
+2023,Kabupaten Pulau Taliabu,1781,tinggi,1,11012,rendah,80,259
+2022,Kabupaten Pulau Morotai,2262,tinggi,7,5346,rendah,66,182
+2024,Kabupaten Halmahera Selatan,2199,tinggi,3,11596,tinggi,18,290
+2019,Kabupaten Halmahera Timur,4028,rendah,1,14205,rendah,8,121
+2020,Kabupaten Pulau Morotai,1775,tinggi,7,7001,tinggi,31,168
+2023,Kabupaten Halmahera Timur,2379,tinggi,2,5800,rendah,37,148
+2023,Kabupaten Halmahera Tengah,1436,sedang,8,9418,rendah,25,231
+2020,Kabupaten Kepulauan Sula,2960,rendah,10,8265,sedang,65,228
+2024,Kabupaten Halmahera Tengah,1392,tinggi,4,9828,sedang,59,247
+2019,Kota Tidore Kepulauan,2378,sedang,2,10618,rendah,89,171
+2022,Kabupaten Halmahera Barat,4685,tinggi,1,11169,sedang,2,234
+2022,Kota Ternate,4541,rendah,3,11619,sedang,16,115
+2020,Kabupaten Kepulauan Sula,3882,sedang,7,5900,rendah,67,155
+2022,Kota Ternate,4766,tinggi,2,9145,sedang,96,211
+2024,Kabupaten Halmahera Timur,2332,sedang,1,9338,tinggi,25,259
+2023,Kabupaten Halmahera Selatan,3286,tinggi,1,8528,tinggi,20,191
+2022,Kota Tidore Kepulauan,2252,rendah,2,6959,rendah,69,299
+2021,Kabupaten Halmahera Tengah,1114,sedang,6,13882,rendah,7,64
+2024,Kota Ternate,1727,rendah,2,4310,tinggi,83,122
+2019,Kabupaten Halmahera Timur,2795,rendah,4,4284,tinggi,95,118
+2022,Kabupaten Pulau Taliabu,2432,sedang,7,5007,sedang,1,92
+2019,Kabupaten Pulau Taliabu,2480,tinggi,6,7397,rendah,92,159
+2024,Kabupaten Kepulauan Sula,1551,rendah,6,8799,tinggi,31,120
+2023,Kabupaten Halmahera Barat,4888,tinggi,8,9558,sedang,44,284
+2023,Kota Tidore Kepulauan,1720,sedang,9,4110,tinggi,75,210
+2021,Kota Tidore Kepulauan,4576,rendah,2,13779,sedang,55,104
+2021,Kabupaten Pulau Morotai,1398,sedang,10,4497,rendah,14,181
+2020,Kabupaten Pulau Taliabu,2935,rendah,4,10752,rendah,3,223
+2020,Kabupaten Halmahera Utara,566,sedang,1,6488,rendah,67,216
+2021,Kabupaten Kepulauan Sula,2706,tinggi,7,7900,sedang,28,127
+2024,Kabupaten Halmahera Timur,1168,rendah,10,8135,sedang,11,263
+2023,Kabupaten Halmahera Utara,946,tinggi,2,9420,sedang,75,248
+2020,Kabupaten Halmahera Tengah,4515,tinggi,6,13895,sedang,97,199
+2023,Kabupaten Pulau Taliabu,2512,rendah,1,6103,rendah,37,69
+2020,Kabupaten Pulau Taliabu,3271,rendah,1,14449,sedang,28,65
+2023,Kabupaten Halmahera Utara,4268,rendah,6,6681,tinggi,65,90
+2020,Kabupaten Halmahera Tengah,3802,tinggi,8,13133,sedang,5,221
+2023,Kabupaten Halmahera Selatan,1440,tinggi,9,9129,rendah,20,258
+2019,Kabupaten Halmahera Timur,4901,tinggi,6,5613,tinggi,12,175
+2020,Kabupaten Halmahera Timur,3534,rendah,7,5495,sedang,54,50
+2021,Kota Ternate,2698,sedang,6,13672,tinggi,99,190
+2019,Kabupaten Halmahera Utara,4575,sedang,7,8667,rendah,7,136
+2020,Kabupaten Halmahera Selatan,1781,tinggi,1,14772,rendah,69,221
+2021,Kabupaten Halmahera Selatan,1684,rendah,10,9167,rendah,10,296
+2021,Kabupaten Halmahera Tengah,3174,rendah,4,7869,tinggi,83,198
+2019,Kabupaten Halmahera Utara,3793,rendah,3,5941,tinggi,31,71
+2019,Kabupaten Pulau Morotai,3227,rendah,5,4466,rendah,82,158
+2023,Kota Tidore Kepulauan,2783,tinggi,2,4340,rendah,67,103
+2024,Kabupaten Halmahera Barat,4811,tinggi,4,5429,sedang,19,114
+2022,Kabupaten Halmahera Timur,4537,sedang,4,9711,tinggi,6,247
+2023,Kabupaten Halmahera Timur,1403,rendah,9,4965,tinggi,20,107
+2024,Kabupaten Pulau Taliabu,4871,tinggi,7,12874,rendah,3,209
+2023,Kabupaten Halmahera Selatan,3467,rendah,3,13668,rendah,38,251
+2020,Kabupaten Pulau Morotai,3370,tinggi,5,7347,tinggi,4,90
+2020,Kabupaten Halmahera Selatan,3856,tinggi,5,10893,sedang,68,193
+2023,Kota Tidore Kepulauan,3837,sedang,10,7937,sedang,30,166
+2022,Kabupaten Halmahera Barat,2228,tinggi,2,7052,sedang,38,129
+2023,Kota Ternate,1259,tinggi,5,13033,sedang,81,220
+2021,Kabupaten Pulau Taliabu,1818,rendah,8,10630,rendah,56,77
+2023,Kota Ternate,1370,tinggi,10,6294,tinggi,50,219
+2024,Kabupaten Pulau Taliabu,4441,sedang,10,8817,rendah,14,153
+2019,Kabupaten Halmahera Selatan,825,tinggi,8,10587,tinggi,37,63
+2022,Kabupaten Pulau Taliabu,1895,tinggi,10,10580,rendah,74,123
+2023,Kota Tidore Kepulauan,3915,rendah,9,4925,rendah,100,108
+2022,Kota Ternate,1436,sedang,7,4755,rendah,38,238
+2020,Kota Ternate,1254,rendah,2,4092,sedang,19,242
+2019,Kabupaten Halmahera Timur,1269,sedang,7,5092,tinggi,27,188
+2023,Kabupaten Halmahera Tengah,4431,tinggi,5,8531,tinggi,38,254
+2023,Kabupaten Halmahera Utara,2009,sedang,3,7714,rendah,57,63
+2019,Kabupaten Pulau Taliabu,2461,rendah,9,9013,sedang,62,65
+2021,Kota Tidore Kepulauan,3935,sedang,9,12781,tinggi,20,285
+2024,Kabupaten Pulau Taliabu,804,rendah,10,4067,tinggi,100,196
+2021,Kabupaten Halmahera Timur,2894,sedang,1,4831,tinggi,90,223
+2019,Kabupaten Halmahera Tengah,4949,rendah,3,8567,sedang,23,142
+2021,Kabupaten Kepulauan Sula,4690,sedang,3,10519,rendah,49,167
+2022,Kota Ternate,4701,rendah,6,5203,tinggi,41,235
+2022,Kabupaten Halmahera Barat,2214,sedang,2,9759,tinggi,12,151
+2019,Kabupaten Kepulauan Sula,4904,tinggi,7,10514,sedang,11,189
+2023,Kabupaten Pulau Morotai,3006,sedang,8,8001,sedang,30,91
+2020,Kota Tidore Kepulauan,696,tinggi,5,5786,sedang,44,162
+2024,Kabupaten Halmahera Tengah,605,rendah,3,11911,rendah,36,107
+2022,Kabupaten Pulau Morotai,3350,tinggi,4,11370,sedang,5,232
+2022,Kabupaten Pulau Taliabu,3154,sedang,10,14093,rendah,92,266
+2020,Kota Ternate,976,sedang,6,6892,tinggi,78,102
+2024,Kota Tidore Kepulauan,1634,rendah,7,10410,rendah,4,131
+2024,Kabupaten Halmahera Timur,4501,rendah,10,14937,rendah,83,238
+2022,Kota Ternate,4398,sedang,5,14611,tinggi,72,77
+2019,Kabupaten Kepulauan Sula,1302,rendah,3,13148,rendah,36,141
+2020,Kabupaten Kepulauan Sula,3041,sedang,10,14583,tinggi,83,80
+2019,Kabupaten Pulau Taliabu,1194,sedang,4,9884,rendah,54,280
+2023,Kabupaten Halmahera Selatan,1569,rendah,2,11423,rendah,74,186
+2024,Kabupaten Halmahera Barat,2465,rendah,9,8870,sedang,61,217
+2021,Kabupaten Pulau Taliabu,2137,sedang,8,14634,rendah,18,99
+2022,Kota Tidore Kepulauan,1306,tinggi,9,5058,rendah,29,213
+2022,Kabupaten Kepulauan Sula,4556,tinggi,1,6146,tinggi,54,115
+2021,Kabupaten Halmahera Barat,4772,sedang,8,11522,tinggi,50,103
+2021,Kota Ternate,910,tinggi,5,6392,rendah,9,117
+2021,Kabupaten Halmahera Tengah,1511,tinggi,4,5512,sedang,99,128
+2022,Kabupaten Kepulauan Sula,2548,sedang,4,5587,tinggi,37,133
+2022,Kota Tidore Kepulauan,4491,sedang,1,6341,sedang,61,175
+2022,Kota Ternate,625,rendah,3,11496,tinggi,82,195
+2024,Kabupaten Pulau Morotai,2350,tinggi,8,10418,rendah,86,74
+2019,Kabupaten Pulau Morotai,1898,rendah,1,11722,sedang,1,227
+2021,Kabupaten Halmahera Timur,1318,rendah,3,12595,rendah,47,74
+2023,Kabupaten Halmahera Barat,3005,rendah,9,5123,sedang,39,290
+2022,Kota Tidore Kepulauan,4870,rendah,9,9622,sedang,74,96
+2020,Kota Tidore Kepulauan,2827,rendah,6,12653,tinggi,21,198
+2019,Kabupaten Pulau Taliabu,2703,rendah,2,11807,tinggi,66,277
+2023,Kabupaten Pulau Morotai,2760,sedang,3,13588,sedang,31,70
+2023,Kabupaten Halmahera Utara,965,rendah,2,11931,tinggi,94,67
+2023,Kabupaten Halmahera Utara,3596,rendah,6,11746,rendah,80,231
+2021,Kabupaten Kepulauan Sula,3200,sedang,5,13625,rendah,81,179
+2022,Kota Ternate,1308,sedang,10,7665,sedang,22,255
+2021,Kabupaten Halmahera Selatan,4562,tinggi,10,6489,rendah,80,240
+2021,Kabupaten Kepulauan Sula,3348,tinggi,10,5444,sedang,63,243
+2020,Kabupaten Halmahera Selatan,694,rendah,7,14555,tinggi,56,98
+2023,Kabupaten Halmahera Barat,2268,sedang,9,14164,tinggi,22,288
+2019,Kabupaten Halmahera Barat,1379,sedang,1,9761,tinggi,86,217
+2024,Kota Tidore Kepulauan,3813,rendah,6,5669,tinggi,51,144
+2023,Kota Tidore Kepulauan,1781,rendah,7,5576,tinggi,39,163
+2021,Kabupaten Halmahera Timur,2935,rendah,7,8758,rendah,43,236
+2021,Kota Ternate,657,sedang,3,5287,sedang,91,211
+2024,Kabupaten Pulau Taliabu,2195,rendah,2,13190,sedang,43,197
+2019,Kabupaten Halmahera Barat,1352,tinggi,3,4203,rendah,8,134
+2022,Kabupaten Halmahera Tengah,636,sedang,7,9279,tinggi,9,259
+2023,Kota Tidore Kepulauan,2775,sedang,6,8780,tinggi,39,173
+2021,Kabupaten Kepulauan Sula,2402,sedang,9,5965,rendah,58,249
+2019,Kabupaten Halmahera Barat,2453,tinggi,4,11825,rendah,9,95
+2021,Kabupaten Halmahera Barat,2104,rendah,3,10807,sedang,93,198
+2024,Kabupaten Pulau Taliabu,4613,tinggi,4,5107,tinggi,27,91
+2024,Kabupaten Halmahera Timur,1907,tinggi,9,12958,sedang,11,65
+2019,Kabupaten Halmahera Timur,2144,tinggi,7,8491,rendah,95,238
+2022,Kabupaten Halmahera Tengah,3797,tinggi,10,13543,tinggi,6,255
+2024,Kota Ternate,1607,rendah,10,9510,rendah,51,92
+2023,Kabupaten Halmahera Selatan,4537,sedang,9,7260,tinggi,87,138
+2023,Kabupaten Pulau Morotai,4656,sedang,3,8904,tinggi,2,115
+2020,Kabupaten Kepulauan Sula,3298,rendah,9,6212,rendah,33,236
+2020,Kabupaten Pulau Taliabu,618,tinggi,8,6412,rendah,18,225
+2024,Kabupaten Halmahera Tengah,1022,rendah,5,8496,tinggi,31,95
+2019,Kabupaten Halmahera Tengah,4580,tinggi,7,14130,tinggi,59,255
+2023,Kabupaten Pulau Morotai,2417,sedang,10,10699,rendah,30,130
+2019,Kabupaten Halmahera Selatan,2251,sedang,6,5470,tinggi,2,200
+2020,Kota Ternate,3326,rendah,3,7774,tinggi,82,148
+2020,Kabupaten Pulau Morotai,2627,rendah,10,10279,tinggi,41,125
+2022,Kabupaten Halmahera Tengah,3138,sedang,8,4019,sedang,83,126
+2024,Kabupaten Halmahera Timur,2386,tinggi,5,10032,rendah,30,57
+2022,Kabupaten Halmahera Selatan,742,rendah,1,12732,tinggi,95,288
+2024,Kabupaten Pulau Taliabu,3223,sedang,3,5162,sedang,31,160
+2019,Kota Ternate,2474,tinggi,4,7539,sedang,75,78
+2023,Kabupaten Kepulauan Sula,4094,tinggi,3,9779,rendah,58,214
+2024,Kabupaten Halmahera Tengah,4333,rendah,9,9696,rendah,57,65
+2021,Kabupaten Pulau Taliabu,610,tinggi,5,4102,sedang,84,162
+2024,Kabupaten Pulau Taliabu,3256,rendah,7,5119,sedang,79,230
+2023,Kota Ternate,2665,sedang,4,12012,rendah,32,138
+2022,Kabupaten Halmahera Selatan,2076,rendah,5,5482,sedang,63,248
+2022,Kabupaten Pulau Taliabu,1801,sedang,7,8727,tinggi,57,280
+2019,Kabupaten Halmahera Utara,2838,tinggi,5,11646,tinggi,56,161
+2022,Kabupaten Halmahera Utara,1655,rendah,7,7493,sedang,21,125
+2022,Kota Tidore Kepulauan,4600,tinggi,7,10893,sedang,77,144
+2020,Kabupaten Halmahera Selatan,2541,tinggi,4,8375,tinggi,23,94
+2020,Kabupaten Halmahera Timur,3957,tinggi,6,4438,tinggi,68,256
+2019,Kabupaten Halmahera Barat,3167,sedang,10,5132,sedang,78,253
+2024,Kabupaten Pulau Taliabu,4950,sedang,9,8510,rendah,27,70
+2021,Kabupaten Halmahera Barat,3581,tinggi,2,4545,tinggi,64,191
+2021,Kabupaten Halmahera Utara,3522,rendah,7,14863,sedang,66,189
+2023,Kabupaten Halmahera Barat,3115,sedang,10,7398,sedang,2,245
+2019,Kabupaten Halmahera Tengah,3927,rendah,8,5798,rendah,17,264
+2021,Kabupaten Halmahera Barat,1762,tinggi,1,11129,rendah,89,139
+2021,Kabupaten Pulau Taliabu,3636,sedang,5,4149,rendah,77,195
+2020,Kabupaten Halmahera Tengah,3034,sedang,7,10430,tinggi,35,239
+2022,Kabupaten Kepulauan Sula,3050,rendah,3,13312,rendah,45,137
+2023,Kota Ternate,4184,sedang,8,5256,sedang,31,202
+2023,Kota Tidore Kepulauan,4106,tinggi,5,9433,tinggi,32,192
+2022,Kabupaten Kepulauan Sula,975,rendah,9,11763,rendah,80,144
+2021,Kabupaten Kepulauan Sula,3416,sedang,5,8945,sedang,98,240
+2023,Kabupaten Halmahera Tengah,3983,tinggi,6,10921,sedang,43,267
+2023,Kota Tidore Kepulauan,859,rendah,10,13316,rendah,86,233
+2019,Kota Ternate,4258,tinggi,9,11344,rendah,3,257
+2023,Kota Ternate,4891,tinggi,5,7211,tinggi,12,78
+2019,Kabupaten Halmahera Timur,893,rendah,8,11969,sedang,16,151
+2023,Kabupaten Kepulauan Sula,2550,tinggi,3,10203,tinggi,74,100
+2020,Kabupaten Kepulauan Sula,3034,sedang,9,8629,sedang,88,163
+2019,Kabupaten Halmahera Timur,1081,rendah,6,11539,sedang,69,50
+2020,Kabupaten Halmahera Tengah,4912,rendah,5,5958,sedang,21,221
+2020,Kabupaten Halmahera Timur,3604,tinggi,7,9537,rendah,1,100
+2019,Kota Ternate,4935,sedang,1,13874,sedang,42,287
+2021,Kabupaten Halmahera Timur,3027,tinggi,7,8888,rendah,1,186
+2019,Kabupaten Halmahera Barat,2975,sedang,3,14999,tinggi,21,101
+2023,Kabupaten Pulau Taliabu,3760,rendah,2,10659,tinggi,35,126
+2023,Kabupaten Halmahera Utara,2877,tinggi,9,5415,sedang,27,144
+2021,Kabupaten Halmahera Tengah,4387,sedang,8,14469,rendah,47,126
+2022,Kota Tidore Kepulauan,662,sedang,1,10269,rendah,37,167
+2022,Kabupaten Halmahera Selatan,2009,tinggi,4,8354,tinggi,57,159
+2020,Kabupaten Pulau Morotai,2505,sedang,6,11168,rendah,100,298
+2024,Kabupaten Halmahera Barat,1773,sedang,1,12430,sedang,78,110
+2022,Kabupaten Halmahera Timur,1570,sedang,10,11382,tinggi,74,134
+2022,Kabupaten Halmahera Timur,3279,tinggi,9,5604,rendah,89,109
+2024,Kabupaten Halmahera Timur,1375,sedang,5,13743,rendah,81,144
+2024,Kabupaten Halmahera Timur,4640,tinggi,8,8266,rendah,94,96
+2020,Kabupaten Pulau Taliabu,4703,tinggi,2,14882,rendah,35,284
+2024,Kabupaten Halmahera Selatan,3737,tinggi,8,5515,tinggi,16,257
+2024,Kabupaten Halmahera Selatan,1184,sedang,8,9303,rendah,48,250
+2022,Kabupaten Halmahera Barat,3202,rendah,7,5202,tinggi,67,298
+2019,Kabupaten Pulau Morotai,4252,tinggi,10,10013,tinggi,18,122
+2020,Kabupaten Pulau Morotai,782,tinggi,5,9405,sedang,38,284
+2022,Kabupaten Pulau Taliabu,1313,sedang,2,5090,rendah,23,193
+2019,Kabupaten Halmahera Barat,4173,rendah,5,8727,tinggi,97,90
+2023,Kabupaten Halmahera Selatan,1196,sedang,4,13874,rendah,5,146
+2023,Kabupaten Halmahera Selatan,797,sedang,9,14855,tinggi,54,235
+2019,Kota Ternate,4756,rendah,4,4704,rendah,66,275
+2024,Kabupaten Halmahera Utara,626,tinggi,9,5356,sedang,42,154
+2023,Kabupaten Halmahera Utara,4326,sedang,8,5871,tinggi,27,85
+2021,Kota Tidore Kepulauan,1464,rendah,2,5546,sedang,17,83
+2021,Kabupaten Halmahera Tengah,2434,rendah,9,12327,rendah,77,139
+2019,Kabupaten Halmahera Utara,1453,tinggi,3,10046,tinggi,16,133
+2021,Kabupaten Halmahera Timur,867,tinggi,4,8441,tinggi,34,191
+2020,Kota Ternate,4436,rendah,8,14205,tinggi,41,80
+2019,Kabupaten Kepulauan Sula,701,tinggi,5,4027,tinggi,46,59
+2019,Kabupaten Halmahera Barat,2143,sedang,8,9493,rendah,94,108
+2020,Kabupaten Pulau Taliabu,1319,sedang,3,4241,tinggi,16,291
+2021,Kabupaten Halmahera Timur,2919,sedang,9,8250,sedang,43,230
+2024,Kabupaten Halmahera Tengah,3267,rendah,3,14848,sedang,83,183
+2019,Kabupaten Pulau Morotai,2925,tinggi,2,11976,tinggi,29,212
+2022,Kabupaten Halmahera Barat,2071,rendah,6,12965,rendah,12,164
+2021,Kabupaten Pulau Taliabu,4293,sedang,10,7970,sedang,49,278
+2021,Kabupaten Pulau Taliabu,3113,sedang,7,12573,sedang,35,136
+2019,Kabupaten Halmahera Selatan,857,tinggi,2,4634,rendah,31,227
+2024,Kabupaten Pulau Taliabu,2179,tinggi,6,7155,rendah,5,163
+2019,Kabupaten Kepulauan Sula,3034,tinggi,3,6566,tinggi,53,141
+2024,Kabupaten Pulau Morotai,1021,tinggi,10,6357,sedang,82,107
+2024,Kabupaten Halmahera Tengah,3575,rendah,2,8816,tinggi,84,300
+2022,Kota Tidore Kepulauan,3379,tinggi,7,7338,rendah,60,224
+2023,Kabupaten Halmahera Selatan,1943,rendah,7,7640,sedang,93,282
+2019,Kabupaten Pulau Taliabu,1405,rendah,9,4241,rendah,20,289
+2023,Kabupaten Kepulauan Sula,3688,sedang,7,7626,rendah,21,98
+2023,Kabupaten Halmahera Utara,2085,sedang,10,14379,sedang,37,293
+2019,Kabupaten Pulau Morotai,1359,rendah,2,6413,tinggi,83,155
+2023,Kabupaten Halmahera Tengah,3580,sedang,7,4029,rendah,60,122
+2024,Kabupaten Pulau Taliabu,1451,rendah,3,9832,tinggi,49,109
+2020,Kota Ternate,775,rendah,2,9288,sedang,18,265
+2020,Kota Ternate,1633,sedang,5,8150,sedang,71,140
+2022,Kota Tidore Kepulauan,616,tinggi,3,6798,tinggi,89,196
+2022,Kabupaten Pulau Taliabu,2245,sedang,7,8695,tinggi,32,207
+2019,Kabupaten Kepulauan Sula,1149,rendah,10,14261,sedang,9,298
+2019,Kota Ternate,4501,sedang,10,9988,rendah,28,199
+2024,Kabupaten Halmahera Barat,4089,rendah,5,5396,rendah,18,191
+2019,Kota Tidore Kepulauan,2464,sedang,6,11174,sedang,81,109
+2023,Kota Ternate,1472,sedang,1,12945,rendah,77,250
+2021,Kabupaten Halmahera Tengah,3617,tinggi,9,10773,tinggi,19,187
+2024,Kabupaten Pulau Morotai,3544,sedang,5,8603,rendah,70,70
+2022,Kabupaten Pulau Taliabu,845,rendah,9,14454,sedang,59,221
+2022,Kabupaten Halmahera Utara,4142,tinggi,8,13308,sedang,54,243
+2019,Kabupaten Halmahera Selatan,3088,tinggi,4,4630,tinggi,45,128
+2022,Kabupaten Pulau Morotai,734,tinggi,1,13598,sedang,48,193
+2021,Kabupaten Pulau Morotai,1406,tinggi,3,7382,rendah,30,76
+2024,Kabupaten Halmahera Tengah,4313,sedang,8,5021,tinggi,38,67
+2024,Kota Ternate,4089,sedang,10,5223,tinggi,24,210
+2019,Kabupaten Halmahera Barat,4507,rendah,10,12608,sedang,38,165
+2023,Kabupaten Halmahera Timur,4219,tinggi,10,6278,rendah,16,157
+2019,Kota Tidore Kepulauan,1726,rendah,8,12086,sedang,38,289
+2019,Kota Tidore Kepulauan,4111,rendah,10,14514,sedang,40,101
+2020,Kabupaten Halmahera Selatan,1263,rendah,4,13586,tinggi,9,61
+2021,Kabupaten Halmahera Barat,2268,rendah,6,8641,sedang,91,62
+2023,Kota Ternate,2166,tinggi,10,8189,sedang,82,120
+2024,Kabupaten Kepulauan Sula,1265,rendah,3,9433,sedang,98,67
+2024,Kabupaten Halmahera Tengah,1974,tinggi,2,11651,sedang,72,134
+2021,Kabupaten Pulau Taliabu,2136,rendah,10,6633,tinggi,28,295
+2024,Kabupaten Halmahera Tengah,4972,tinggi,1,12016,rendah,78,74
+2022,Kabupaten Halmahera Tengah,2546,rendah,3,5555,tinggi,34,94
+2024,Kabupaten Pulau Morotai,1241,sedang,2,5841,sedang,7,119
+2019,Kabupaten Halmahera Tengah,3847,sedang,6,7403,tinggi,48,127
+2022,Kabupaten Pulau Morotai,2683,tinggi,3,14258,rendah,62,278
+2024,Kabupaten Halmahera Utara,1246,rendah,2,4745,rendah,38,257
+2024,Kabupaten Halmahera Barat,3083,tinggi,5,6642,tinggi,92,145
+2021,Kabupaten Halmahera Selatan,2368,tinggi,8,10428,tinggi,67,199
+2023,Kabupaten Halmahera Tengah,1352,tinggi,6,5395,sedang,88,55
