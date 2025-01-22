@@ -1,17 +1,18 @@
 import streamlit as st
+import pandas as pd
 
 # Import semua dashboard
-from Ayam_Petelur_Morotai import main as ayam_dashboard
-from Cengkeh_Morotai import main as cengkeh_dashboard
-from Kakao_Morotai import main as kakao_dashboard
-from Pisang_Morotai import main as pisang_dashboard
-from Padi_Morotai import main as padi_dashboard
+from dashboards.Ayam_Petelur_Morotai import main as ayam_dashboard
+from dashboards.Cengkeh_Morotai import main as cengkeh_dashboard
+from dashboards.Kakao_Morotai import main as kakao_dashboard
+from dashboards.Pisang_Morotai import main as pisang_dashboard
+from dashboards.Padi_Morotai import main as padi_dashboard
 
 # Load Our Dataset
 def load_data(data):
-	df = pd.read_csv(data)
-	return df 
-    
+    df = pd.read_csv(data)
+    return df
+
 # Judul aplikasi
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
 
