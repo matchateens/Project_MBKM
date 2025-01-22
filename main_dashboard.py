@@ -7,6 +7,11 @@ from Kakao_Morotai import main as kakao_dashboard
 from Pisang_Morotai import main as pisang_dashboard
 from Padi_Morotai import main as padi_dashboard
 
+# Load Our Dataset
+def load_data(data):
+	df = pd.read_csv(data)
+	return df 
+    
 # Judul aplikasi
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
 
