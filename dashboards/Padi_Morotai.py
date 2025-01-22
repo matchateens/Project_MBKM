@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.ticker as ticker
 import plotly.express as px
+from sklearn.linear_model import LinearRegression
 
 # Fungsi untuk memuat data
 @st.cache_data
