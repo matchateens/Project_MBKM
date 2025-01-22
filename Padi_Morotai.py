@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    csv_path = 'D:/Anggi/data/data_padi.csv'  # Sesuaikan path file CSV Anda
+    csv_path = '/mount/src/project_mbkm/data_padi.csv'  # Sesuaikan path file CSV Anda
     data = pd.read_csv(csv_path)
     return data
 
