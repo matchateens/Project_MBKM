@@ -1,17 +1,13 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import MinMaxScaler
 
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    df = load_data("data/data_pisang.csv")
-    data = pd.read_csv(csv_path)
-    return data
+    df = pd.read_csv("data/data_pisang.csv")
+    return df
 
 # Fungsi utama untuk menjalankan dashboard
 def main():
