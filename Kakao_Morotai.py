@@ -11,7 +11,7 @@ import matplotlib.ticker as ticker  # Import ticker untuk FixedLocator
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    data = pd.read_csv("https://raw.githubusercontent.com/matchateen/repo/branch/data/data_kakao.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/matchateens/repo/branch/data/data_kakao.csv")
     return data
 
 # Fungsi-fungsi analisis
