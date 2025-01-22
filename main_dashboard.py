@@ -16,7 +16,7 @@ def local_css(file_name):
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
 
 # Load CSS file
-local_css('/mount/src/project_mbkm/style.css')
+local_css("style.css")
 
 # Sidebar untuk navigasi
 st.sidebar.title("📂 Menu Dashboard")
