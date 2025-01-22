@@ -9,11 +9,7 @@ import graphviz
 import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
-@st.cache_data
-def load_data():
-    csv_path = '/mount/src/project_mbkm/data_ayam.csv'
-    data = pd.read_csv(csv_path)
-    return data
+data = pd.read_csv("https://raw.githubusercontent.com/username/repo/branch/data/data_ayam.csv")
 
 def main():
     # Memuat data
