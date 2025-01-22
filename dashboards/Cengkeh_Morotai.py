@@ -3,15 +3,12 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-import plotly.express as px
-import graphviz
-import matplotlib.ticker as ticker  # Import ticker untuk FixedLocator
 
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    df = load_data("data/data_cengkeh.csv")
-    return data
+    df = pd.read_csv("data/data_cengkeh.csv")
+    return df
 
 def main():
     # Memuat data
@@ -44,7 +41,8 @@ def main():
         ax.set_ylabel("Produksi (kg)")
         ax.grid(True)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Produksi cengkeh di Pulau Morotai menunjukkan fluktuasi dari tahun ke tahun.
@@ -56,14 +54,14 @@ def main():
         st.subheader("Wilayah dengan Produksi Tertinggi")
         production_by_region = data.groupby('wilayah')['produksi_pertahun'].sum().sort_values(ascending=False)
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=production_by_region.index, y=production_by_region.values, hue=production_by_region.index, palette='viridis', legend=False, ax=ax)
+        sns.barplot(x=production_by_region.index, y=production_by_region.values, palette='viridis', ax=ax)
         ax.set_title("Produksi Cengkeh per Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Total Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(production_by_region.index))))  # Atur posisi tick
-        ax.set_xticklabels(production_by_region.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Kabupaten Pulau Talibu memiliki produksi tertinggi dibandingkan wilayah lainnya.
@@ -78,7 +76,8 @@ def main():
         ax.set_xlabel("Curah Hujan (Encoded)")
         ax.set_ylabel("Produksi (kg)")
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Curah hujan sedang cenderung menghasilkan produksi yang lebih tinggi.
@@ -89,14 +88,14 @@ def main():
         st.subheader("Analisis Permintaan Pasar")
         demand_counts = data['permintaan_pasar'].value_counts()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=demand_counts.index, y=demand_counts.values, hue=demand_counts.index, palette='cool', legend=False, ax=ax)
+        sns.barplot(x=demand_counts.index, y=demand_counts.values, palette='cool', ax=ax)
         ax.set_title("Distribusi Permintaan Pasar")
         ax.set_xlabel("Kategori Permintaan")
         ax.set_ylabel("Jumlah Kasus")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(demand_counts.index))))  # Atur posisi tick
-        ax.set_xticklabels(demand_counts.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Permintaan pasar tinggi mendominasi, diikuti oleh permintaan rendah dan sedang.
@@ -107,14 +106,14 @@ def main():
         st.subheader("Harga per Wilayah")
         price_by_region = data.groupby('wilayah')['harga'].mean().sort_values(ascending=False)
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=price_by_region.index, y=price_by_region.values, hue=price_by_region.index, palette='magma', legend=False, ax=ax)
+        sns.barplot(x=price_by_region.index, y=price_by_region.values, palette='magma', ax=ax)
         ax.set_title("Harga Rata-Rata Cengkeh per Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Harga (Rp/kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(price_by_region.index))))  # Atur posisi tick
-        ax.set_xticklabels(price_by_region.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Harga cengkeh bervariasi antar wilayah, dengan Kabupaten Halmahera Timur memiliki harga tertinggi.
@@ -128,7 +127,8 @@ def main():
         sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', ax=ax)
         ax.set_title("Korelasi antara Produksi, Curah Hujan, Harga, dan Permintaan Pasar")
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Korelasi antara produksi dan harga sangat lemah, menunjukkan bahwa peningkatan produksi tidak secara langsung memengaruhi harga.
@@ -139,14 +139,14 @@ def main():
         st.subheader("Wilayah Paling Potensial")
         potential_regions = data.groupby('wilayah')['produksi_pertahun'].mean().sort_values(ascending=False)
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=potential_regions.index, y=potential_regions.values, hue=potential_regions.index, palette='plasma', legend=False, ax=ax)
+        sns.barplot(x=potential_regions.index, y=potential_regions.values, palette='plasma', ax=ax)
         ax.set_title("Wilayah dengan Potensi Produksi Tertinggi")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Rata-Rata Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(potential_regions.index))))  # Atur posisi tick
-        ax.set_xticklabels(potential_regions.index, rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
-        plt.close(fig)  # Menutup plot untuk menghindari kebocoran memori
+        plt.close(fig)
+        
         st.markdown("""
         **Kesimpulan:**
         - Kabupaten Halmahera Utara memiliki potensi produksi tertinggi, diikuti oleh Pulau Morotai dan Halmahera Barat.
@@ -160,12 +160,11 @@ def main():
         # Contoh analisis data cengkeh
         st.subheader("Distribusi Produksi per Wilayah")
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.boxplot(data=data, x='wilayah', y='produksi_pertahun', hue='wilayah', palette='viridis', legend=False, ax=ax)
+        sns.boxplot(data=data, x='wilayah', y='produksi_pertahun', palette='viridis', ax=ax)
         ax.set_title("Distribusi Produksi per Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(data['wilayah'].unique()))))  # Atur posisi tick
-        ax.set_xticklabels(data['wilayah'].unique(), rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
         plt.close(fig)
         
@@ -183,12 +182,11 @@ def main():
         st.subheader("Risiko Produksi per Wilayah")
         risk_data = data.groupby('wilayah')['produksi_pertahun'].std().reset_index()
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(x=risk_data['wilayah'], y=risk_data['produksi_pertahun'], hue=risk_data['wilayah'], palette='coolwarm', legend=False, ax=ax)
+        sns.barplot(x=risk_data['wilayah'], y=risk_data['produksi_pertahun'], palette='coolwarm', ax=ax)
         ax.set_title("Risiko Produksi per Wilayah")
         ax.set_xlabel("Wilayah")
         ax.set_ylabel("Standar Deviasi Produksi (kg)")
-        ax.xaxis.set_major_locator(ticker.FixedLocator(range(len(risk_data['wilayah']))))  # Atur posisi tick
-        ax.set_xticklabels(risk_data['wilayah'], rotation=45)  # Atur label tick dengan rotasi
+        ax.set_xticklabels(ax.get_xticklabels(), rotation=45)
         st.pyplot(fig)
         plt.close(fig)
         
@@ -205,7 +203,7 @@ def main():
         # Contoh analisis peluang pasar
         st.subheader("Peluang Pasar Berdasarkan Permintaan")
         fig, ax = plt.subplots(figsize=(10, 6))
-        sns.barplot(data=data, x='permintaan_pasar', y='produksi_pertahun', hue='permintaan_pasar', palette='cool', legend=False, ax=ax)
+        sns.barplot(data=data, x='permintaan_pasar', y='produksi_pertahun', palette='cool', ax=ax)
         ax.set_title("Peluang Pasar Berdasarkan Permintaan")
         ax.set_xlabel("Kategori Permintaan")
         ax.set_ylabel("Produksi (kg)")
