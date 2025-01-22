@@ -7,22 +7,16 @@ from Kakao_Morotai import main as kakao_dashboard
 from Pisang_Morotai import main as pisang_dashboard
 from Padi_Morotai import main as padi_dashboard
 
+# Load CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
 # Judul aplikasi
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
-st.markdown("""
-    <style>
-    .stApp {
-        max-width: 1200px;
-        margin: auto;
-    }
-    .stMarkdown {
-        padding: 10px;
-        background-color: #f0f2f6;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+
+# Load CSS file
+local_css('D:/Anggi/data/data_pisang.csv')
 
 # Sidebar untuk navigasi
 st.sidebar.title("📂 Menu Dashboard")
@@ -30,7 +24,7 @@ dashboard_options = [
     "Analisis Ayam Petelur",
     "Analisis Cengkeh",
     "Analisis Kakao",
-    "Analisis Pisang",  # Pastikan menu ini ada
+    "Analisis Pisang",
     "Analisis Padi"
 ]
 selected_dashboard = st.sidebar.selectbox("Pilih Dashboard", dashboard_options)
