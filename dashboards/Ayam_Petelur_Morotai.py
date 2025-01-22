@@ -1,12 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
-import plotly.express as px
-import graphviz
-import matplotlib.ticker as ticker
 
 # Fungsi untuk memuat data
 def load_data(data_path):
@@ -42,8 +37,10 @@ def main():
         ax.set_title("Trend Produksi dan Harga Tahunan", fontsize=16)
         ax.set_xlabel("Tahun", fontsize=12)
         ax.set_ylabel("Produksi (kg) / Harga (Rp/kg)", fontsize=12)
+        ax.legend()
         ax.grid(True)
         st.pyplot(fig)
+        plt.close()
         
         # Distribusi Permintaan
         st.subheader("Distribusi Permintaan Ayam")
@@ -54,6 +51,7 @@ def main():
         ax.set_ylabel("Jumlah Kasus", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
+        plt.close()
         
         # Posisi Kompetitif
         st.subheader("Posisi Kompetitif Antar Wilayah")
@@ -64,6 +62,7 @@ def main():
         ax.set_ylabel("Produksi Pertahun (kg)", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
+        plt.close()
         
         # Kesimpulan
         st.markdown("""
@@ -86,6 +85,7 @@ def main():
         ax.set_ylabel("Harga (Rp/kg)", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
+        plt.close()
         
         st.markdown("""
         **Kesimpulan:**
@@ -107,6 +107,7 @@ def main():
         ax.set_ylabel("Profit (Rp)", fontsize=12)
         ax.grid(True)
         st.pyplot(fig)
+        plt.close()
         
         st.markdown("""
         **Kesimpulan:**
@@ -139,6 +140,7 @@ def main():
         ax.set_ylabel("Produksi Pertahun (kg)", fontsize=12)
         ax.grid(axis='y')
         st.pyplot(fig)
+        plt.close()
         
         st.markdown("""
         **Kesimpulan:**
