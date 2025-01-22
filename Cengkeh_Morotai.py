@@ -10,7 +10,7 @@ import matplotlib.ticker as ticker  # Import ticker untuk FixedLocator
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    data = pd.read_csv("https://raw.githubusercontent.com/matchateens/repo/branch/data/data_cengekeh.csv")
+    df = load_data("data/data_cengkeh.csv")
     return data
 
 def main():
