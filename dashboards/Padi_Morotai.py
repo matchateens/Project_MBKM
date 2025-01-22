@@ -101,21 +101,6 @@ def generate_recommendations(df):
 
 # Fungsi utama untuk menjalankan dashboard
 def main():
-    st.markdown("""
-    <style>
-    .stApp {
-        max-width: 1200px;
-        margin: auto;
-    }
-    .stMarkdown {
-        padding: 10px;
-        background-color: #f0f2f6;
-        border-radius: 10px;
-        margin-bottom: 20px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
-
     # Memuat data
     data = load_data()
 
