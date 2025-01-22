@@ -7,16 +7,8 @@ from Kakao_Morotai import main as kakao_dashboard
 from Pisang_Morotai import main as pisang_dashboard
 from Padi_Morotai import main as padi_dashboard
 
-# Load CSS
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
 # Judul aplikasi
 st.title("🌿 Dashboard Analisis Pertanian Pulau Morotai")
-
-# Load CSS file
-local_css("style.css")
 
 # Sidebar untuk navigasi
 st.sidebar.title("📂 Menu Dashboard")
