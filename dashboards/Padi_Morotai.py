@@ -6,6 +6,7 @@ from sklearn.preprocessing import LabelEncoder
 import matplotlib.ticker as ticker
 import plotly.express as px
 from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import MinMaxScaler
 
 # Fungsi untuk memuat data
 @st.cache_data
